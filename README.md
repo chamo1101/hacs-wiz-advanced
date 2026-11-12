@@ -1,6 +1,6 @@
 # WiZ Advanced
 
-[![Validate](https://github.com/GITHUB_LOGIN/hacs-wiz-advanced/actions/workflows/validate.yml/badge.svg)](https://github.com/GITHUB_LOGIN/hacs-wiz-advanced/actions/workflows/validate.yml)
+[![Validate](https://github.com/chamo1101/hacs-wiz-advanced/actions/workflows/validate.yml/badge.svg)](https://github.com/chamo1101/hacs-wiz-advanced/actions/workflows/validate.yml)
 
 Custom integration Home Assistant qui ajoute le pilotage fin des ampoules **WiZ** en local
 (UDP 38899), là où l'intégration officielle `wiz` s'arrête.
@@ -31,7 +31,7 @@ et 16 effets. Elle ne remonte pas :
 ## Installation (HACS)
 
 1. HACS → ⋮ → **Dépôts personnalisés**
-2. Ajouter `https://github.com/GITHUB_LOGIN/hacs-wiz-advanced` avec la catégorie **Integration**
+2. Ajouter `https://github.com/chamo1101/hacs-wiz-advanced` avec la catégorie **Integration**
 3. Installer **WiZ Advanced**, puis redémarrer Home Assistant
 4. **Paramètres → Appareils et services → Ajouter une intégration → WiZ Advanced** → saisir l'IP
    de l'ampoule (elle reste sur le même réseau, port UDP 38899)
