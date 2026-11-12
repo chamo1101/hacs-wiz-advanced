@@ -1,0 +1,12 @@
+{
+  "domain": "wiz_advanced",
+  "name": "WiZ Advanced",
+  "codeowners": ["@GITHUB_LOGIN"],
+  "config_flow": true,
+  "documentation": "https://github.com/GITHUB_LOGIN/hacs-wiz-advanced",
+  "integration_type": "device",
+  "iot_class": "local_polling",
+  "issue_tracker": "https://github.com/GITHUB_LOGIN/hacs-wiz-advanced/issues",
+  "requirements": [],
+  "version": "0.1.0"
+}

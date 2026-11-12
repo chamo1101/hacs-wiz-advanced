@@ -1,0 +1,15 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "WiZ Advanced",
+        "description": "Local IP address of the WiZ bulb (UDP 38899).",
+        "data": { "host": "IP address" }
+      }
+    },
+    "error": {
+      "cannot_connect": "Cannot reach the bulb. Check the IP and that UDP 38899 is allowed on the LAN."
+    },
+    "abort": { "already_configured": "This bulb is already configured." }
+  }
+}

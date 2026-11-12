@@ -1,0 +1,15 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "WiZ Advanced",
+        "description": "Adresse IP de l'ampoule WiZ sur le réseau local (port UDP 38899).",
+        "data": { "host": "Adresse IP" }
+      }
+    },
+    "error": {
+      "cannot_connect": "Ampoule injoignable. Vérifie l'IP et que le réseau local autorise l'UDP 38899."
+    },
+    "abort": { "already_configured": "Cette ampoule est déjà configurée." }
+  }
+}
