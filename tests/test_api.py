@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Tests du client UDP WiZ. Lecture seule sur l'ampoule réelle : rien n'est modifié.
 
-    python3 tests/test_api.py            # WIZ_IP=192.168.1.21 par défaut
-    WIZ_IP= autre python3 tests/test_api.py
+    WIZ_IP=192.168.1.50 python3 tests/test_api.py   # tests live (lecture seule)
+    python3 tests/test_api.py                       # sans WIZ_IP : tests hors-ligne seulement
 """
 import os
 import sys
@@ -28,7 +28,7 @@ SCENES = api.SCENES
 WizBulb = api.WizBulb
 WizError = api.WizError
 
-HOST = os.environ.get("WIZ_IP", "192.168.1.21")
+HOST = os.environ.get("WIZ_IP")  # aucune IP par défaut : rien de perso dans le dépôt
 
 
 class TestSceneTable(unittest.TestCase):
@@ -56,6 +56,8 @@ class TestUnreachable(unittest.TestCase):
 
 class TestLiveBulb(unittest.TestCase):
     def setUp(self):
+        if not HOST:
+            self.skipTest("WIZ_IP non défini : tests live ignorés")
         self.bulb = WizBulb(HOST, timeout=2.0)
 
     def test_pilot_fields(self):
